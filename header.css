@@ -1,0 +1,59 @@
+.header{
+  background-image: url(https://w7.pngwing.com/pngs/987/181/png-transparent-brown-marble-tile-marble-material-stone-texture-texture-brown-wall-texture.png);
+  background-position: center;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25),
+  -8px -8px 15px rgba(0, 0, 0, 0.25);
+  height: 80px;
+  position: fixed;
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+  margin-top: 10px;
+  max-width: 1200px;
+  min-width: 750px;
+}
+
+.logo{
+  height: 66px;
+  width: 66px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 33px;
+  margin:0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+  -5px -5px 10px rgba(0, 0, 0, 0.2);
+  cursor:pointer;
+  transition: 0.25s;
+}
+
+.logo-button{
+  border:none;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0 30px;
+  width: fit-content;
+  height: fit-content;
+  cursor: initial;
+}
+
+.header-buttons{
+  background-color: rgb(231, 231, 231);
+  color:  #8f1919;
+  margin: 0 30px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+  -5px -5px 10px rgba(0, 0, 0, 0.2);
+  height: 30px;
+  border: 0px solid;
+  border-radius: 18px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.header-buttons:hover,
+.logo:hover
+{
+background-color: rgb(218, 218, 218);;
+}
