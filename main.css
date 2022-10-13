@@ -2,30 +2,55 @@ main{
   width:90%;
   max-width: 1200px;
   min-width: 940px;
+  align-items: center;
 }
 
-.section-noutati{
+.section-noutati,
+.section-playlist{
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25),
   -8px -8px 15px rgba(0, 0, 0, 0.25);
+  background-color:rgb(224, 185, 134);
   border-radius: 15px;
   box-sizing: border-box;
   display: grid;
   padding: 15px;
-  grid-template-columns: 1fr 1fr;
   row-gap: 15px;
   column-gap: 15px;
   margin-bottom: 15px;
 }
 
+.section-noutati{
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-playlist{
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+}
+
+.noutate p{
+  padding-left: 7px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
 .noutate{
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25),
-    -8px -8px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(0, 0, 0, 0.25);
+    background-color:rgb(231, 231, 231);
     border-radius: 10px;
     box-sizing: border-box;
     display: grid;
     padding: 15px;
     grid-template-columns: 1fr;
     column-gap: 3px;
+    transition: 0.3s;
+}
+
+.noutate:hover{
+  background-color:black;
+  font-size: 17px;
+  color: rgb(226, 226, 226);
 }
   
 .noutate iframe{
@@ -37,13 +62,24 @@ main{
   padding-top: 100px;
   margin-bottom: 5px;
   text-align: center;
-  text-shadow: -3px -3px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2),
+  -3px -3px 5px rgba(0, 0, 0, 0.2);
   color: #8f1919;
   font-size: 25px;
 }
 
-.noutate p{
-  color:rgb(65, 65, 65);
-  padding-left: 7px;
-  margin-bottom: 0;
+
+.section-playlist img{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
 }
+
+.section-playlist img:hover{
+  width: 102%;
+  box-shadow: 9px 9px 13px rgba(0, 0, 0, 0.2),
+    -9px -9px 13px rgba(0, 0, 0, 0.2);
+} 
