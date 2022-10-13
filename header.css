@@ -5,14 +5,16 @@
   -8px -8px 15px rgba(0, 0, 0, 0.25);
   height: 80px;
   position: fixed;
+  box-sizing: border-box;
   width:90%;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   border-radius: 40px;
   margin-top: 10px;
   max-width: 1200px;
   min-width: 750px;
+  padding: 0px 15px;
 }
 
 .logo{
@@ -30,7 +32,7 @@
 .logo-button{
   border:none;
   background-color: rgba(255, 255, 255, 0);
-  padding: 0 30px;
+  padding: 0 20px;
   width: fit-content;
   height: fit-content;
   cursor: initial;
@@ -39,14 +41,15 @@
 .header-buttons{
   background-color: rgb(231, 231, 231);
   color:  #8f1919;
-  margin: 0 30px;
+  margin: 0 10px;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
   -5px -5px 10px rgba(0, 0, 0, 0.2);
   height: 30px;
+  width:130px;
   border: 0px solid;
   border-radius: 18px;
-  padding: 0 15px;
+  padding: 0 10px;
   font-size: 14px;
   font-weight: bold;
   transition: 0.25s;
